@@ -6,110 +6,381 @@
 <title>Lakshana Gnanasekaram | AI &amp; Backend Developer</title>
 <meta name="description" content="Portfolio of Lakshana Gnanasekaram — AI/ML enthusiast and Backend Developer from Jaffna, Sri Lanka.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=JetBrains+Mono:wght@400;500;600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 32 32%27%3E%3Crect width=%2732%27 height=%2732%27 rx=%277%27 fill=%27%2310141b%27/%3E%3Ctext x=%2716%27 y=%2722%27 font-family=%27monospace%27 font-size=%2716%27 fill=%27%23e3a83b%27 text-anchor=%27middle%27%3E%3E_%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,500;0,600;1,500;1,600&family=Sora:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
+<a class="skip-link" href="#home">Skip to content</a>
 
 <header>
-  <div class="tabbar">
-    <div class="filetab"><span class="dot"></span> <a href="index.html">lakshana.portfolio</a></div>
-    <button class="navToggle" aria-label="Toggle menu"><i class="fa-solid fa-bars"></i></button>
-    <nav id="mainnav">
+  <div class="navbar">
+    <a class="brand" href="#home"><span class="mark"></span>Lakshana</a>
+    <nav id="mainnav" aria-label="Section navigation">
       <ul>
-        <li><a href="index.html">home</a></li>
-        <li><a href="about.html">about</a></li>
-        <li><a href="education.html">education</a></li>
-        <li><a href="experience.html">experience</a></li>
-        <li><a href="projects.html">projects</a></li>
-        
-        <li><a href="services.html">services</a></li>
-        <li><a href="contact.html">contact</a></li>
+        <li><a data-target="home" href="#home">home</a></li>
+        <li><a data-target="about" href="#about">about</a></li>
+        <li><a data-target="education" href="#education">education</a></li>
+        <li><a data-target="experience" href="#experience">experience</a></li>
+        <li><a data-target="projects" href="#projects">projects</a></li>
+        <li><a data-target="services" href="#services">services</a></li>
+        <li><a data-target="contact" href="#contact">contact</a></li>
       </ul>
     </nav>
+    <button class="navToggle" aria-label="Toggle menu">menu</button>
   </div>
 </header>
 
-<main>
-
-<section class="hero">
-  <div class="aurora a1" aria-hidden="true"></div>
-  <div class="aurora a2" aria-hidden="true"></div>
-  
-  <div class="term-card" aria-hidden="true">
-    <div class="term-dots"><span></span><span></span><span></span></div>
-    <pre><code><span class="tk-kw">const</span> dev = {
-  <span class="tk-key">name</span>: <span class="tk-str">"Lakshana"</span>,
-  <span class="tk-key">stack</span>: [<span class="tk-str">"Python"</span>,
-    <span class="tk-str">"ML"</span>, <span class="tk-str">"React"</span>],
-  <span class="tk-key">shipping</span>: <span class="tk-bool">true</span>
-}</code></pre>
-  </div>
+<!-- HOME -->
+<section id="home" class="hero">
   <div class="hero-grid">
-    <div class="hero-photo-wrap">
-      <img src="images/Port.png" alt="Photo of Lakshana Gnanasekaram">
-      <span class="floaty f1" aria-hidden="true">Python</span>
-      <span class="floaty f2" aria-hidden="true">ML</span>
-      <span class="floaty f3" aria-hidden="true">React</span>
+    <div>
+      <span class="eyebrow">AI &amp; Backend Developer</span>
+      <h1>Lakshana<br>Gnanasekaram</h1>
+      <p class="lede">Undergraduate in <b>ICT — Artificial Intelligence</b> at the University of Colombo, currently working as an <b>AI Enabled Backend Developer</b>. I build the systems underneath AI-facing products: models, APIs, and the backend logic that connects them.</p>
+      <p class="lede">Based in Jaffna, Sri Lanka — open to remote work.</p>
+      <div class="btn-row">
+        <a class="btn primary" href="#projects">View projects</a>
+        <a class="btn" href="#services">View services</a>
+        <a class="btn" href="https://lu6-ux.github.io/My_portfolio/Lakshana_CV.pdf" target="_blank" rel="noopener">Download CV</a>
+      </div>
+      <div class="social-row">
+        <a href="https://github.com/lu6-ux" target="_blank" rel="noopener" aria-label="GitHub">
+          <svg class="icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 .5C5.73.5.98 5.24.98 11.52c0 5.01 3.29 9.26 7.86 10.76.57.11.78-.25.78-.55 0-.27-.01-1.17-.02-2.12-3.2.7-3.88-1.36-3.88-1.36-.52-1.34-1.28-1.7-1.28-1.7-1.05-.71.08-.7.08-.7 1.16.08 1.77 1.19 1.77 1.19 1.03 1.76 2.7 1.25 3.36.96.1-.75.4-1.25.73-1.54-2.56-.29-5.25-1.28-5.25-5.7 0-1.26.45-2.29 1.19-3.09-.12-.29-.52-1.47.11-3.06 0 0 .97-.31 3.18 1.18a11 11 0 0 1 5.8 0c2.2-1.49 3.17-1.18 3.17-1.18.64 1.59.24 2.77.12 3.06.74.8 1.18 1.83 1.18 3.09 0 4.43-2.7 5.4-5.27 5.69.41.36.78 1.08.78 2.17 0 1.57-.01 2.83-.01 3.22 0 .3.2.67.79.55A11.03 11.03 0 0 0 23.02 11.5C23.02 5.24 18.27.5 12 .5Z"/></svg>
+          github.com/lu6-ux
+        </a>
+        <a href="https://www.linkedin.com/in/lakshana-gnanasekaram-979b58361/" target="_blank" rel="noopener" aria-label="LinkedIn">
+          <svg class="icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.45 20.45h-3.55v-5.57c0-1.33-.02-3.03-1.85-3.03-1.85 0-2.14 1.45-2.14 2.94v5.66H9.36V9h3.41v1.56h.05c.47-.9 1.63-1.85 3.36-1.85 3.6 0 4.27 2.37 4.27 5.45v6.29ZM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12ZM7.12 20.45H3.56V9h3.56v11.45Z"/></svg>
+          LinkedIn
+        </a>
+      </div>
     </div>
-    <div class="hero-copy">
-      <h1>Lakshana Gnanasekaram</h1>
-      <p class="role">I'm a <span id="typed"></span><span class="cursor"></span></p>
-      <p>Undergraduate in <strong>ICT — Artificial Intelligence</strong> at the University of Colombo, currently working as an <strong>AI Enabled Backend Developer</strong>.</p>
-      <p>I build the systems underneath AI-facing products: models, APIs, and the backend logic that connects them.</p>
-      <p>Based in Jaffna, Sri Lanka — open to remote work.</p>
-      <div class="hero-actions">
-        <a href="projects.html" class="cv-button">View Projects</a>
-        <a href="services.html" class="cv-button ghost">View Services</a>
-        <a href="Lakshana_CV.pdf" target="_blank" class="cv-button ghost"><i class="fa-solid fa-file-arrow-down"></i> Download CV</a>
-        <div class="socials">
-          <a href="https://github.com/lu6-ux" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
-          <a href="https://www.linkedin.com/in/lakshana-gnanasekaram-979b58361/" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+
+    <div class="hero-visual">
+      <canvas id="netCanvas" aria-hidden="true"></canvas>
+      <div class="hero-portrait">
+        <img class="avatar" src="https://lu6-ux.github.io/My_portfolio/images/Port.png" alt="Photo of Lakshana Gnanasekaram">
+        <div class="chip-row">
+          <span class="chip">Python</span><span class="chip">ML</span><span class="chip">React</span>
         </div>
+      </div>
+      <div class="req-card">
+        <div class="req-top"><span class="lit"></span>connection: live</div>
+        <pre id="reqText"></pre>
       </div>
     </div>
   </div>
 </section>
 
 <div class="stats">
-  <div class="stat-box"><div class="num" data-count="10" data-suffix="+">0</div><div class="lbl">projects built</div></div>
-  <div class="stat-box"><div class="num" data-count="5" data-suffix="+">0</div><div class="lbl">certifications</div></div>
-  <div class="stat-box"><div class="num" data-count="2" data-suffix="">0</div><div class="lbl">internships completed</div></div>
+  <div class="stat-box"><b data-count="9">0</b><span>projects built</span></div>
+  <div class="stat-box"><b data-count="5">0</b><span>certifications</span></div>
+  <div class="stat-box"><b data-count="2">0</b><span>internships completed</span></div>
 </div>
 
-<div class="tech-strip" aria-label="Technologies I work with">
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python" title="Python">
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript" title="JavaScript">
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" alt="Java" title="Java">
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/csharp/csharp-original.svg" alt="C#" title="C#">
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="React" title="React">
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" alt="Node.js" title="Node.js">
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg" alt="PostgreSQL" title="PostgreSQL">
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/scikitlearn/scikitlearn-original.svg" alt="Scikit-learn" title="Scikit-learn">
-</div>
+<main>
 
-<section class="cell reveal">
-  <div class="cell-inner">
-    <div class="cell-head">
-    
-      <h2><span class="icon-badge"><i class="fa-solid fa-user"></i></span> About Me</h2>
+  <!-- ABOUT -->
+  <section id="about" class="block reveal">
+    <div class="block-head">
+      <div>
+        <span class="eyebrow">Who I am</span>
+        <h2><span class="icon-badge" aria-hidden="true">◎</span>About</h2>
+      </div>
+      <p class="block-lede">The short version, and the not-so-short version.</p>
     </div>
-    <p style="color:var(--muted); max-width:66ch;">I'm an AI/ML enthusiast and backend developer building clean, scalable digital solutions — from AI-powered chatbots to full ERP systems. I enjoy the full loop: exploring a model in a notebook, then wiring it into a real, working product.</p>
-    <a href="about.html">Know more about me →</a>
-  </div>
-</section>
+
+    <div class="about-grid">
+      <div class="about-copy">
+        <p>I'm <b>Lakshana Gnanasekaram</b>, an undergraduate reading for a Bachelor of Technology (Hons) in ICT, specializing in Artificial Intelligence, at the University of Colombo.</p>
+        <p>I've spent the last year working across backend development and applied AI — building APIs, wiring up machine learning models, and shipping small AI-powered tools that solve real problems: PDF question-answering, resume matching, and recommendation systems among them.</p>
+        <p>I care about the full pipeline of a project — from cleaning and exploring data, to training a model, to putting it behind a backend that's actually reliable in production.</p>
+        <p>Outside of code, I enjoy design work in Figma and Illustrator, which shows up in how I think about the UI layer of what I build.</p>
+
+        <ul class="facts">
+          <li><b>Location:</b> Jaffna, Sri Lanka</li>
+          <li><b>Studying:</b> BICT (Hons) — AI, University of Colombo (2023–2027)</li>
+          <li><b>Currently:</b> Artificial Intelligence Intern, Decodelabs</li>
+          <li><b>Open to:</b> Remote work &amp; internships</li>
+        </ul>
+      </div>
+
+      <div class="toolkit">
+        <h3>Languages</h3>
+        <div class="tool-group"><div class="tag-row">
+          <span class="tag">Python</span><span class="tag">Java</span><span class="tag">C#</span><span class="tag">JavaScript</span>
+        </div></div>
+
+        <h3>AI / Machine Learning</h3>
+        <div class="tool-group"><div class="tag-row">
+          <span class="tag">Machine Learning</span><span class="tag">ML Algorithms</span><span class="tag">Computer Vision</span><span class="tag">Scikit-Learn</span><span class="tag">Jupyter</span>
+        </div></div>
+
+        <h3>Web &amp; Backend</h3>
+        <div class="tool-group"><div class="tag-row">
+          <span class="tag">Full-Stack Development</span><span class="tag">Vercel</span><span class="tag">Streamlit</span><span class="tag">Android Studio</span><span class="tag">CSS</span>
+        </div></div>
+
+        <h3>Databases</h3>
+        <div class="tool-group"><div class="tag-row">
+          <span class="tag">PostgreSQL</span><span class="tag">Database Systems</span>
+        </div></div>
+
+        <h3>Other</h3>
+        <div class="tool-group"><div class="tag-row">
+          <span class="tag">Problem Solving</span><span class="tag">Project Management</span><span class="tag">Quality Assurance</span><span class="tag">Data Analysis</span><span class="tag">GitHub</span>
+        </div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- EDUCATION -->
+  <section id="education" class="block reveal">
+    <div class="block-head">
+      <div>
+        <span class="eyebrow">Academics</span>
+        <h2><span class="icon-badge" aria-hidden="true">🎓</span>Education</h2>
+      </div>
+      <p class="block-lede">Academic background and certifications.</p>
+    </div>
+
+    <div class="timeline">
+      <div class="tl-item">
+        <div class="tl-date">2023 – 2027</div>
+        <h3>Bachelor of Technology (Hons) — ICT, Artificial Intelligence</h3>
+        <div class="tl-org">University of Colombo</div>
+      </div>
+      <div class="tl-item">
+        <div class="tl-date">Issued Mar 2026</div>
+        <h3>Diploma in Information Technology</h3>
+        <div class="tl-org">University of Moratuwa</div>
+      </div>
+      <div class="tl-item">
+        <div class="tl-date">2014 – 2022</div>
+        <h3>Technology Stream (Advanced Level)</h3>
+        <div class="tl-org">J/Chavakachcheri Hindu College · Grade: 2AB (Engineering Technology)</div>
+      </div>
+    </div>
+
+    <h3 style="font-family:var(--mono);font-size:0.76rem;text-transform:uppercase;letter-spacing:0.1em;color:var(--muted-dim);margin:36px 0 12px;">Licenses &amp; Certifications</h3>
+    <ul class="cert-list">
+      <li><b>Certificate of Completion: Claude 101</b>Anthropic · Issued Apr 2026</li>
+      <li><b>Problem Solving</b>HackerRank · Issued Mar 2026</li>
+      <li><b>Data Engineering</b>Amazon Web Services (AWS) · Issued Feb 2026</li>
+      <li><b>Introduction to Artificial Intelligence (AI)</b>IBM (via Coursera) · Issued Mar 2026</li>
+      <li><b>Data Engineering in AWS</b>Whizlabs · Issued Mar 2026</li>
+    </ul>
+  </section>
+
+  <!-- EXPERIENCE -->
+  <section id="experience" class="block reveal">
+    <div class="block-head">
+      <div>
+        <span class="eyebrow">Track record</span>
+        <h2><span class="icon-badge" aria-hidden="true">💼</span>Experience</h2>
+      </div>
+      <p class="block-lede">Where I've worked, and roughly what I did there.</p>
+    </div>
+
+    <div class="timeline">
+      <div class="tl-item">
+        <div class="tl-date">Jul 2026 – Present · 1 mo</div>
+        <h3>Artificial Intelligence Intern</h3>
+        <div class="tl-org">Decodelabs · Part-time</div>
+        <ul>
+          <li>Working on applied AI/ML tasks as part of a part-time internship.</li>
+          <li>Details to be added as the role progresses — check back soon.</li>
+        </ul>
+      </div>
+      <div class="tl-item">
+        <div class="tl-date">Dec 2025 – Jun 2026 · 7 mos</div>
+        <h3>AI Enabled Backend Developer</h3>
+        <div class="tl-org">Softwareplus Pvt Ltd · Internship · Colombo, Sri Lanka</div>
+        <ul>
+          <li>Built and maintained backend services, integrating AI/ML components into existing systems.</li>
+          <li>Worked across the stack to connect model outputs to real application logic and APIs.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects" class="block reveal">
+    <div class="block-head">
+      <div>
+        <span class="eyebrow">Built &amp; shipped</span>
+        <h2><span class="icon-badge" aria-hidden="true">◫</span>Projects</h2>
+      </div>
+      <p class="block-lede">A mix of things I've built — AI tools, full-stack systems, and a game.</p>
+    </div>
+
+    <div class="project-grid">
+      <article class="project-card" style="--accent:var(--cyan);">
+        <h3><a href="https://lu6-ux.github.io/My_Portfolio/" target="_blank" rel="noopener">Portfolio Website</a></h3>
+        <p>Personal portfolio showcasing projects and skills, built from scratch and shipped on GitHub Pages.</p>
+        <div class="stack-tags"><span>HTML</span><span>CSS</span><span>JavaScript</span><span>GitHub Pages</span></div>
+        <a class="open-link" href="https://lu6-ux.github.io/My_Portfolio/" target="_blank" rel="noopener">Open project →</a>
+      </article>
+
+      <article class="project-card" style="--accent:var(--gold);">
+        <h3><a href="https://lu6-ux.github.io/text-editor-Application/" target="_blank" rel="noopener">Text Editor App</a></h3>
+        <p>Browser-based text editor with save and open file functionality.</p>
+        <div class="stack-tags"><span>HTML</span><span>CSS</span><span>JavaScript</span></div>
+        <a class="open-link" href="https://lu6-ux.github.io/text-editor-Application/" target="_blank" rel="noopener">Open project →</a>
+      </article>
+
+      <article class="project-card" style="--accent:var(--coral);">
+        <h3><a href="https://myfirstrepo-gwfy7hyysmbgbisnbth7ku.streamlit.app/" target="_blank" rel="noopener">AI PDF Chatbot</a></h3>
+        <p>Ask questions against any PDF and get instant, grounded answers back.</p>
+        <div class="stack-tags"><span>Python</span><span>Streamlit</span><span>OpenAI API</span><span>LangChain</span></div>
+        <a class="open-link" href="https://myfirstrepo-gwfy7hyysmbgbisnbth7ku.streamlit.app/" target="_blank" rel="noopener">Open project →</a>
+      </article>
+
+      <article class="project-card" style="--accent:var(--coral);">
+        <h3><a href="https://airesumechatbot-kgp8vjr3ecqsmyipooubmm.streamlit.app/" target="_blank" rel="noopener">AI Resume Chatbot</a></h3>
+        <p>Upload a PDF resume and get instant skill extraction plus a job-match percentage.</p>
+        <div class="stack-tags"><span>Python</span><span>Streamlit</span><span>PyPDF2</span><span>FuzzyWuzzy</span></div>
+        <a class="open-link" href="https://airesumechatbot-kgp8vjr3ecqsmyipooubmm.streamlit.app/" target="_blank" rel="noopener">Open project →</a>
+      </article>
+
+      <article class="project-card" style="--accent:var(--coral);">
+        <h3><a href="https://lu6-ux.github.io/student-performance-prediction/" target="_blank" rel="noopener">Student Performance Prediction</a></h3>
+        <p>A model that predicts exam scores from study hours and attendance history.</p>
+        <div class="stack-tags"><span>Python</span><span>Pandas</span><span>scikit-learn</span><span>Matplotlib</span></div>
+        <a class="open-link" href="https://lu6-ux.github.io/student-performance-prediction/" target="_blank" rel="noopener">Open project →</a>
+      </article>
+
+      <article class="project-card" style="--accent:var(--coral);">
+        <h3><a href="https://movierecommender-gg69gbtsubbspnmxuppth4.streamlit.app/" target="_blank" rel="noopener">AI Movie Recommendation System</a></h3>
+        <p>Suggests films by analyzing movie similarity, with quick links to trailers on YouTube.</p>
+        <div class="stack-tags"><span>Python</span><span>Streamlit</span><span>scikit-learn</span><span>Pandas</span></div>
+        <a class="open-link" href="https://movierecommender-gg69gbtsubbspnmxuppth4.streamlit.app/" target="_blank" rel="noopener">Open project →</a>
+      </article>
+
+      <article class="project-card" style="--accent:var(--gold);">
+        <h3><a href="https://www.linkedin.com/feed/update/urn:li:activity:7391793202242150400/" target="_blank" rel="noopener">Smart Calendar App</a></h3>
+        <p>Task and event manager focused on real-time updates and a clean UI/UX.</p>
+        <div class="stack-tags"><span>C#</span><span>SQLite</span><span>UI/UX</span></div>
+        <a class="open-link" href="https://www.linkedin.com/feed/update/urn:li:activity:7391793202242150400/" target="_blank" rel="noopener">Open project →</a>
+      </article>
+
+      <article class="project-card" style="--accent:var(--cyan);">
+        <h3><a href="https://github.com/lu6-ux/ERP_SYSTEM" target="_blank" rel="noopener">ERP System</a></h3>
+        <p>Web-based ERP integrating HR and Finance modules on an MVC architecture.</p>
+        <div class="stack-tags"><span>HTML</span><span>CSS</span><span>JavaScript</span><span>Node.js</span><span>Express</span><span>SQLite</span></div>
+        <a class="open-link" href="https://github.com/lu6-ux/ERP_SYSTEM" target="_blank" rel="noopener">Open project →</a>
+      </article>
+
+      <article class="project-card" style="--accent:var(--gold);">
+        <h3><a href="https://lu6-ux.github.io/game/" target="_blank" rel="noopener">Dodge Falling Blocks</a></h3>
+        <p>Classic arcade game — dodge falling blocks and survive as long as you can.</p>
+        <div class="stack-tags"><span>Python</span><span>Pygame</span></div>
+        <a class="open-link" href="https://www.linkedin.com/posts/lakshana-gnanasekaram_python-gamedevelopment-pygame-ugcPost-7439858325233754113-ZgUy/" target="_blank" rel="noopener">Open project →</a>
+      </article>
+    </div>
+  </section>
+
+  <!-- SERVICES -->
+  <section id="services" class="block reveal">
+    <div class="block-head">
+      <div>
+        <span class="eyebrow">What I offer</span>
+        <h2><span class="icon-badge" aria-hidden="true">⚙</span>Services</h2>
+      </div>
+      <p class="block-lede">What I can build for you, based on what I actually do.</p>
+    </div>
+
+    <div class="service-grid">
+      <div class="service-card">
+        <div class="icon-badge" aria-hidden="true">◎</div>
+        <h3>AI / ML Model Building</h3>
+        <p>Training and tuning models for prediction, classification, and recommendation tasks — from raw data to a working model, using Python, scikit-learn, and Jupyter.</p>
+      </div>
+      <div class="service-card">
+        <div class="icon-badge" aria-hidden="true">◫</div>
+        <h3>Web Site Development</h3>
+        <p>Designing and developing modern, responsive, and visually attractive websites for businesses, portfolios, and personal brands, with a focus on performance, accessibility, and user experience.</p>
+      </div>
+      <div class="service-card">
+        <div class="icon-badge" aria-hidden="true">◨</div>
+        <h3>Full-Stack Web Development</h3>
+        <p>Building complete web apps — frontend, backend, and database — using HTML, CSS, JavaScript, Node.js, and PostgreSQL, deployed on platforms like Vercel.</p>
+      </div>
+      <div class="service-card">
+        <div class="icon-badge" aria-hidden="true">⚙</div>
+        <h3>Backend &amp; API Development</h3>
+        <p>Designing and building the backend logic and APIs that connect AI models or business data to real applications, with a focus on clean, maintainable systems.</p>
+      </div>
+    </div>
+
+    <p class="block-lede" style="margin-top:26px;">If any of this fits what you need, I'd love to hear about your project.</p>
+    <a class="btn primary" href="#contact">Contact me →</a>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="block reveal">
+    <div class="block-head">
+      <div>
+        <span class="eyebrow">Get in touch</span>
+        <h2><span class="icon-badge" aria-hidden="true">✉</span>Contact</h2>
+      </div>
+      <p class="block-lede">Have a project in mind, or just want to say hi? Reach out.</p>
+    </div>
+
+    <div class="contact-grid">
+      <div class="contact-info">
+        <div>
+          <div class="label">Phone</div>
+          <a href="tel:+94705758586">070 5758 586</a>
+        </div>
+        <div>
+          <div class="label">Email</div>
+          <a href="mailto:lakshanagnanasekaram29@gmail.com">lakshanagnanasekaram29@gmail.com</a>
+        </div>
+        <div>
+          <div class="label">Location</div>
+          <span>Jaffna, Sri Lanka</span>
+        </div>
+      </div>
+
+      <form id="contact-form">
+        <div>
+          <label for="c-name">Name</label>
+          <input id="c-name" name="name" type="text" required>
+        </div>
+        <div>
+          <label for="c-email">Email</label>
+          <input id="c-email" name="email" type="email" required>
+        </div>
+        <div>
+          <label for="c-message">Message</label>
+          <textarea id="c-message" name="message" required></textarea>
+        </div>
+        <button class="btn primary" type="submit" style="justify-self:start;cursor:pointer;">Send message</button>
+        <p class="form-status" id="form-status" role="status" aria-live="polite"></p>
+      </form>
+    </div>
+  </section>
 
 </main>
 
 <footer>
-  © <span id="year"></span> Lakshana Gnanasekaram · <a href="contact.html"><i class="fas fa-envelope"></i> get in touch</a>
+  <span>© <span id="year"></span> Lakshana Gnanasekaram</span>
+  <span class="footer-links">
+    <a href="https://github.com/lu6-ux" target="_blank" rel="noopener" aria-label="GitHub">
+      <svg class="icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 .5C5.73.5.98 5.24.98 11.52c0 5.01 3.29 9.26 7.86 10.76.57.11.78-.25.78-.55 0-.27-.01-1.17-.02-2.12-3.2.7-3.88-1.36-3.88-1.36-.52-1.34-1.28-1.7-1.28-1.7-1.05-.71.08-.7.08-.7 1.16.08 1.77 1.19 1.77 1.19 1.03 1.76 2.7 1.25 3.36.96.1-.75.4-1.25.73-1.54-2.56-.29-5.25-1.28-5.25-5.7 0-1.26.45-2.29 1.19-3.09-.12-.29-.52-1.47.11-3.06 0 0 .97-.31 3.18 1.18a11 11 0 0 1 5.8 0c2.2-1.49 3.17-1.18 3.17-1.18.64 1.59.24 2.77.12 3.06.74.8 1.18 1.83 1.18 3.09 0 4.43-2.7 5.4-5.27 5.69.41.36.78 1.08.78 2.17 0 1.57-.01 2.83-.01 3.22 0 .3.2.67.79.55A11.03 11.03 0 0 0 23.02 11.5C23.02 5.24 18.27.5 12 .5Z"/></svg>
+      GitHub
+    </a>
+    <a href="https://www.linkedin.com/in/lakshana-gnanasekaram-979b58361/" target="_blank" rel="noopener" aria-label="LinkedIn">
+      <svg class="icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.45 20.45h-3.55v-5.57c0-1.33-.02-3.03-1.85-3.03-1.85 0-2.14 1.45-2.14 2.94v5.66H9.36V9h3.41v1.56h.05c.47-.9 1.63-1.85 3.36-1.85 3.6 0 4.27 2.37 4.27 5.45v6.29ZM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12ZM7.12 20.45H3.56V9h3.56v11.45Z"/></svg>
+      LinkedIn
+    </a>
+    <a href="#home">back to top</a>
+  </span>
 </footer>
 
-<div id="backToTop" aria-label="Back to top"><i class="fas fa-arrow-up"></i></div>
+<button id="backToTop" aria-label="Back to top">↑</button>
 
-<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
 <script src="script.js"></script>
 </body>
 </html>
