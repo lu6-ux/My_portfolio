@@ -91,37 +91,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
-  // ---- request card typing animation ----
-  const reqText = document.getElementById('reqText');
-  if (reqText) {
-    const lines = [
-      { t: 'POST ', c: '' }, { t: '/api/v1/inference', c: 's' },
-      { t: '\n{\n  "model": ', c: '' }, { t: '"resume-matcher"', c: 's' },
-      { t: ',\n  "status": ', c: '' }, { t: '"connected"', c: 's' },
-      { t: ',\n  "latency_ms": ', c: '' }, { t: '42', c: 'k' },
-      { t: '\n}', c: '' }
-    ];
-    if (reduceMotion) {
-      reqText.innerHTML = lines.map(l => l.c ? `<span class="${l.c}">${l.t}</span>` : l.t).join('');
-    } else {
-      let li = 0, ci = 0, out = '';
-      const typeNext = () => {
-        if (li >= lines.length) { reqText.innerHTML = out; return; }
-        const line = lines[li];
-        if (ci < line.t.length) {
-          ci++;
-          const partial = line.t.slice(0, ci);
-          reqText.innerHTML = out + (line.c ? `<span class="${line.c}">${partial}</span>` : partial) + '<span class="cur"></span>';
-          setTimeout(typeNext, 16);
-        } else {
-          out += line.c ? `<span class="${line.c}">${line.t}</span>` : line.t;
-          li++; ci = 0;
-          setTimeout(typeNext, 40);
-        }
-      };
-      setTimeout(typeNext, 500);
-    }
-  }
+ 
 
   // ---- hero node-graph canvas ----
   const canvas = document.getElementById('netCanvas');
